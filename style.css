@@ -1,254 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-family: 'Poppins',sans-serif;
+    background-color: #F3F1FF;
 }
-.header{
-    padding-left: 7%;
-    padding-top: 5%;
-    font-size: 25px;
+/* top players css starting */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 870px;
+    grid-row-gap: 30px;
 }
-.intro{
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.section-Tittle{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.container{
+    padding:30px ;
+    background-color: #FFF;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.player h3{
+    margin-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/* top blog styles */
+.blog .thamnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog{
     display: flex;
 }
-.navbar{
-    padding-top: 5%;
-    display:inline-block;
-}
-nav ul{
-    display:flex;
-    padding-left: 120%;
-    padding-top: 25%;
-
-}
-nav li{
-    list-style: none;
-}
-nav li a{
-    padding: 0px 15px;
-    font-size: 25px;
-    display: inline-block;
-}
-.text{
-    font-size: 30px;
-    padding-left: 7%;
-    padding-top: 8%;
-}
-.photo img{
-    width: 80%;
-    float: right;
-    padding-top: 10%;
-    padding-right: 10%;
-}
-.secondpart{
-    display: flex;
-}
-h1{
-    font-weight: 800;
-}
-button{
-    background-color: rgb(189, 28, 0);
-    width: 250px;
-    height: 60px;
-    color: #fff;
-    font-size: medium;
-    font-weight: 700;
-    border-radius: 30px;
-}
-.logos{
-    height: 100px;
-    width: 800px;
-    border: 1px solid lightgrey;
-    display: flex;
-    margin-left: 20%;
-    margin-right: 60%;
-    margin-top: 7%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-button a{
-    padding-top: 50%;
-}
-.ALIBABA svg{
-    padding-top: 50%;
-}
-.amazone{
-    padding-top:5%;
-    padding-left: 5%;
-}
-.DARAZ{
-    padding-top: 4%;
-    padding-left: 5%;
-}
-.Ebay{
-    padding-top: 3%;
-    padding-left: 5%;
-}
-.Rakuten{
-    padding-top: 4%;
-    padding-left: 5%;
-}
-.walmart{
-    padding-top: 4%;
-    padding-left: 5%;
-}
-span{
-    font-size: 30px;
-    text-align: center;
-    padding-top: 5%;
-}
-.Collection{
-    display: flex;
-    padding-right: 25%;
-    padding-top: 10%;
-    padding-left: 25%;
-    padding-bottom: 1%;
-    padding-left: 20%;
-}
-.tripod{
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    margin-left: 1%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-ul{
-    list-style: none;
-    display: flex;
-    padding-left: 2%;
-}
-.microphone{
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.Airbuds{
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.collection{
-    display: flex;
-    padding-right: 25%;
-    padding-top: 5%;
-    padding-left: 25%;
-    padding-bottom: 3%;
-    padding-left: 20%;
-}
-.drone{
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    margin-left: 1%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.Lightsetup{
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.Photostoot{
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.third{
-    display: flex;
-    padding-right: 25%;
-    padding-top: 3%;
-    padding-left: 25%;
-    padding-bottom: 1%;
-    padding-left: 20%;
-}
-.Vloggingcamera{
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    margin-left: 1%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.Green{
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.Action{
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    margin-right: 3%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-h4{
-    color: rgb(188, 50, 96);
-    padding-left: 78%;
-}
-.img img{
-    padding-left: 60%;
-    width: 125%;
-    padding-right: 3%;
-}
-.Ending{
-    display: flex;
-    padding-top: 10%;
-    padding-bottom: 5%;
-}
-.paragraph{
-    padding-left: 25%;
-    padding-bottom: 10%;
-}
-.Featured{
-    font-size: 50px;
-}
-.Paragraph{
+.blog-tittle{
     font-size: 20px;
 }
-footer{
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    height: 30%;
-    text-align: center;
-
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
 }
-.Footer{
-    background-color: #000;
-    padding-top: 2%;
-    padding-left: 2%;
-    padding-bottom: 2%;
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size:  16px;
 }
-.Footer li{
-    padding: 5px;
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:26px ;
 }
-.Footer ul{
-    padding-left: 45%;
+.Container{
+    padding:7px ;
+    background-color: #FFF;
 }
-.All{
-    padding-top: 2%;
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+span{
+    display: flex;
+    justify-content: center;
+}
+.course-tittle{
+    margin-top: 3px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.course-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-clock.clock{
+        color: #FF4A60;
+        margin-right: 5px;
+}
+button{
+    color: #FF4A60;
+    background-color: rgba(255, 74, 96, 0.2);
+    border: #FFE4E8;
+    border-radius: 128px;
+    width: 94.83px;
+    height: 29.38px;
+    display: flex;
+    align-items: center;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:24px ;
+}
+/* 
+-------------------------------
+-------midia queries------------
+------------------------------- */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
-    
 
-
-
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container{
+        width: 100%;
+    }
+}
